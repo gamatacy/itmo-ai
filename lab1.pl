@@ -120,15 +120,17 @@ strongest_player_info(Player, Race, Class, Level, Strength) :-
     \+ (member(OtherPlayer, OtherPlayers), is_stronger(OtherPlayer, Player)),
     player_strength(Player, Strength).
 
-% Самый слабый игрок
-weakest_player_info(Player, Race, Class, Level, Strength) :-
-    player_info(Player, Race, Class, _, Level),
-    findall(OtherPlayer, (player_info(OtherPlayer, _, _, _, _), Player \= OtherPlayer), OtherPlayers),
-    \+ (member(OtherPlayer, OtherPlayers), is_weaker(OtherPlayer, Player)),
-    player_strength(Player, Strength).
-
-% Правило для определения слабейшего игрока
+% Кто слабее
 is_weaker(Player1, Player2) :-
     player_strength(Player1, Strength1),
     player_strength(Player2, Strength2),
     Strength1 < Strength2.
+
+% Правило для определения слабейшего игрока
+weakest_player_info(Player, Race, Class, Level, Strength) :-
+    player_info(Player, Race, Class, _, Level),
+    player_strength(Player, Strength).
+
+% Правило для поиска всех игроков с силой меньше заданной
+weaker_players(Strength, Players) :-
+    findall((Player, Race, Class, Level, PlayerStrength), (weakest_player_info(Player, Race, Class, Level, PlayerStrength), PlayerStrength < Strength), Players).
