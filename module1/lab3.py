@@ -2,7 +2,7 @@ from swiplserver import PrologMQI, PrologThread, create_posix_path
 import re
 from abc import ABC, abstractmethod
 
-KNOWLEDGE_BASE_PATH = r'F:\code\itmo-ai\lab1.pl'
+KNOWLEDGE_BASE_PATH = r'/home/gamatacy/Desktop/itmo-ai/lab1.pl'
 
 class AbstractQueryProcessor(ABC):
     def run(self, prolog: PrologThread):

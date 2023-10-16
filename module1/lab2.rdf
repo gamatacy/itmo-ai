@@ -1,0 +1,289 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.semanticweb.org/gamatacy/ontologies/2023/9/untitled-ontology-2/"
+     xml:base="http://www.semanticweb.org/gamatacy/ontologies/2023/9/untitled-ontology-2/"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:untitled-ontology-2="http://www.semanticweb.org/gamatacy/ontologies/2023/9/untitled-ontology-2#">
+    <owl:Ontology rdf:about="http://www.semanticweb.org/gamatacy/ontologies/2023/9/untitled-ontology-2"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/gamatacy/ontologies/2023/9/untitled-ontology-2#main_stat -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/gamatacy/ontologies/2023/9/untitled-ontology-2#main_stat">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/gamatacy/ontologies/2023/9/untitled-ontology-2#Class"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/gamatacy/ontologies/2023/9/untitled-ontology-2#Stat"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/gamatacy/ontologies/2023/9/untitled-ontology-2#damage -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/gamatacy/ontologies/2023/9/untitled-ontology-2#damage">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/gamatacy/ontologies/2023/9/untitled-ontology-2#Weapon"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/gamatacy/ontologies/2023/9/untitled-ontology-2#Class -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/gamatacy/ontologies/2023/9/untitled-ontology-2#Class"/>
+    
+
+
+    <!-- http://www.semanticweb.org/gamatacy/ontologies/2023/9/untitled-ontology-2#Race -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/gamatacy/ontologies/2023/9/untitled-ontology-2#Race"/>
+    
+
+
+    <!-- http://www.semanticweb.org/gamatacy/ontologies/2023/9/untitled-ontology-2#Stat -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/gamatacy/ontologies/2023/9/untitled-ontology-2#Stat"/>
+    
+
+
+    <!-- http://www.semanticweb.org/gamatacy/ontologies/2023/9/untitled-ontology-2#Weapon -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/gamatacy/ontologies/2023/9/untitled-ontology-2#Weapon"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/gamatacy/ontologies/2023/9/untitled-ontology-2#barbarian -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/gamatacy/ontologies/2023/9/untitled-ontology-2#barbarian">
+        <rdf:type rdf:resource="http://www.semanticweb.org/gamatacy/ontologies/2023/9/untitled-ontology-2#Class"/>
+        <untitled-ontology-2:main_stat rdf:resource="http://www.semanticweb.org/gamatacy/ontologies/2023/9/untitled-ontology-2#strength"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/gamatacy/ontologies/2023/9/untitled-ontology-2#bard -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/gamatacy/ontologies/2023/9/untitled-ontology-2#bard">
+        <rdf:type rdf:resource="http://www.semanticweb.org/gamatacy/ontologies/2023/9/untitled-ontology-2#Class"/>
+        <untitled-ontology-2:main_stat rdf:resource="http://www.semanticweb.org/gamatacy/ontologies/2023/9/untitled-ontology-2#charisma"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/gamatacy/ontologies/2023/9/untitled-ontology-2#charisma -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/gamatacy/ontologies/2023/9/untitled-ontology-2#charisma">
+        <rdf:type rdf:resource="http://www.semanticweb.org/gamatacy/ontologies/2023/9/untitled-ontology-2#Stat"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/gamatacy/ontologies/2023/9/untitled-ontology-2#cleric -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/gamatacy/ontologies/2023/9/untitled-ontology-2#cleric">
+        <rdf:type rdf:resource="http://www.semanticweb.org/gamatacy/ontologies/2023/9/untitled-ontology-2#Class"/>
+        <untitled-ontology-2:main_stat rdf:resource="http://www.semanticweb.org/gamatacy/ontologies/2023/9/untitled-ontology-2#wisdom"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/gamatacy/ontologies/2023/9/untitled-ontology-2#club -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/gamatacy/ontologies/2023/9/untitled-ontology-2#club">
+        <rdf:type rdf:resource="http://www.semanticweb.org/gamatacy/ontologies/2023/9/untitled-ontology-2#Weapon"/>
+        <untitled-ontology-2:damage rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">15</untitled-ontology-2:damage>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/gamatacy/ontologies/2023/9/untitled-ontology-2#dagger -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/gamatacy/ontologies/2023/9/untitled-ontology-2#dagger">
+        <rdf:type rdf:resource="http://www.semanticweb.org/gamatacy/ontologies/2023/9/untitled-ontology-2#Weapon"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/gamatacy/ontologies/2023/9/untitled-ontology-2#dextirity -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/gamatacy/ontologies/2023/9/untitled-ontology-2#dextirity">
+        <rdf:type rdf:resource="http://www.semanticweb.org/gamatacy/ontologies/2023/9/untitled-ontology-2#Stat"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/gamatacy/ontologies/2023/9/untitled-ontology-2#druid -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/gamatacy/ontologies/2023/9/untitled-ontology-2#druid">
+        <rdf:type rdf:resource="http://www.semanticweb.org/gamatacy/ontologies/2023/9/untitled-ontology-2#Class"/>
+        <untitled-ontology-2:main_stat rdf:resource="http://www.semanticweb.org/gamatacy/ontologies/2023/9/untitled-ontology-2#wisdom"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/gamatacy/ontologies/2023/9/untitled-ontology-2#fighter -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/gamatacy/ontologies/2023/9/untitled-ontology-2#fighter">
+        <rdf:type rdf:resource="http://www.semanticweb.org/gamatacy/ontologies/2023/9/untitled-ontology-2#Class"/>
+        <untitled-ontology-2:main_stat rdf:resource="http://www.semanticweb.org/gamatacy/ontologies/2023/9/untitled-ontology-2#strength"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/gamatacy/ontologies/2023/9/untitled-ontology-2#handaxe -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/gamatacy/ontologies/2023/9/untitled-ontology-2#handaxe">
+        <rdf:type rdf:resource="http://www.semanticweb.org/gamatacy/ontologies/2023/9/untitled-ontology-2#Weapon"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/gamatacy/ontologies/2023/9/untitled-ontology-2#intelligence -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/gamatacy/ontologies/2023/9/untitled-ontology-2#intelligence">
+        <rdf:type rdf:resource="http://www.semanticweb.org/gamatacy/ontologies/2023/9/untitled-ontology-2#Stat"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/gamatacy/ontologies/2023/9/untitled-ontology-2#javelin -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/gamatacy/ontologies/2023/9/untitled-ontology-2#javelin">
+        <rdf:type rdf:resource="http://www.semanticweb.org/gamatacy/ontologies/2023/9/untitled-ontology-2#Weapon"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/gamatacy/ontologies/2023/9/untitled-ontology-2#lightcrossbow -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/gamatacy/ontologies/2023/9/untitled-ontology-2#lightcrossbow">
+        <rdf:type rdf:resource="http://www.semanticweb.org/gamatacy/ontologies/2023/9/untitled-ontology-2#Weapon"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/gamatacy/ontologies/2023/9/untitled-ontology-2#lutnia -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/gamatacy/ontologies/2023/9/untitled-ontology-2#lutnia">
+        <rdf:type rdf:resource="http://www.semanticweb.org/gamatacy/ontologies/2023/9/untitled-ontology-2#Weapon"/>
+        <untitled-ontology-2:damage rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">5</untitled-ontology-2:damage>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/gamatacy/ontologies/2023/9/untitled-ontology-2#monk -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/gamatacy/ontologies/2023/9/untitled-ontology-2#monk">
+        <rdf:type rdf:resource="http://www.semanticweb.org/gamatacy/ontologies/2023/9/untitled-ontology-2#Class"/>
+        <untitled-ontology-2:main_stat rdf:resource="http://www.semanticweb.org/gamatacy/ontologies/2023/9/untitled-ontology-2#dextirity"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/gamatacy/ontologies/2023/9/untitled-ontology-2#morgenshtern -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/gamatacy/ontologies/2023/9/untitled-ontology-2#morgenshtern">
+        <rdf:type rdf:resource="http://www.semanticweb.org/gamatacy/ontologies/2023/9/untitled-ontology-2#Weapon"/>
+        <untitled-ontology-2:damage rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">30</untitled-ontology-2:damage>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/gamatacy/ontologies/2023/9/untitled-ontology-2#paladin -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/gamatacy/ontologies/2023/9/untitled-ontology-2#paladin">
+        <rdf:type rdf:resource="http://www.semanticweb.org/gamatacy/ontologies/2023/9/untitled-ontology-2#Class"/>
+        <untitled-ontology-2:main_stat rdf:resource="http://www.semanticweb.org/gamatacy/ontologies/2023/9/untitled-ontology-2#strength"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/gamatacy/ontologies/2023/9/untitled-ontology-2#pistol -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/gamatacy/ontologies/2023/9/untitled-ontology-2#pistol">
+        <rdf:type rdf:resource="http://www.semanticweb.org/gamatacy/ontologies/2023/9/untitled-ontology-2#Weapon"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/gamatacy/ontologies/2023/9/untitled-ontology-2#ranger -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/gamatacy/ontologies/2023/9/untitled-ontology-2#ranger">
+        <rdf:type rdf:resource="http://www.semanticweb.org/gamatacy/ontologies/2023/9/untitled-ontology-2#Class"/>
+        <untitled-ontology-2:main_stat rdf:resource="http://www.semanticweb.org/gamatacy/ontologies/2023/9/untitled-ontology-2#dextirity"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/gamatacy/ontologies/2023/9/untitled-ontology-2#rogue -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/gamatacy/ontologies/2023/9/untitled-ontology-2#rogue">
+        <rdf:type rdf:resource="http://www.semanticweb.org/gamatacy/ontologies/2023/9/untitled-ontology-2#Class"/>
+        <untitled-ontology-2:main_stat rdf:resource="http://www.semanticweb.org/gamatacy/ontologies/2023/9/untitled-ontology-2#dextirity"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/gamatacy/ontologies/2023/9/untitled-ontology-2#strength -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/gamatacy/ontologies/2023/9/untitled-ontology-2#strength">
+        <rdf:type rdf:resource="http://www.semanticweb.org/gamatacy/ontologies/2023/9/untitled-ontology-2#Stat"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/gamatacy/ontologies/2023/9/untitled-ontology-2#wisdom -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/gamatacy/ontologies/2023/9/untitled-ontology-2#wisdom">
+        <rdf:type rdf:resource="http://www.semanticweb.org/gamatacy/ontologies/2023/9/untitled-ontology-2#Stat"/>
+    </owl:NamedIndividual>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.5.26.2023-07-17T20:34:13Z) https://github.com/owlcs/owlapi -->
+

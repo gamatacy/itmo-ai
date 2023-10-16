@@ -46,7 +46,7 @@ main_stat(sorcerer, charisma).
 main_stat(warlock, charisma).
 main_stat(wizard, intelligence).
 
-% % Оружие и его урон
+% Оружие и его урон
 weapon(lutnia, 5).
 weapon(club, 10).
 weapon(dagger, 15).
